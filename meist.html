@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bootstrapi juhend">
+  <meta name="author" content="">
+  <title>Bootstrap 5 juhend</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap ikoonid-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!--minu CSS-->
+  <link rel="stylesheet" href="custom.css">
+ 
+</head>
+
+<body>
+<!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg sticky-top bg-dark py-3" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="#">Bootstrap 5</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meist.html">Meist</a>
+          </li>
+        </ul>
+       
+	   <!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+      
+	  <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+      
+	  <!--Ostukorvi ikoon-->
+        <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-6"><img src="team.jpg" class="img-fluid rounded-3"
+            alt="team" /></div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-semibold text-primary-emphasis mt-3 mb-0">MEIST</h1>
+            <p class="fs-5 fw-light"><a href="#" class="tooltip-test" title="Lorem ipsum dolor sit amet">See on minu tooltip</a></p>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor gravida ipsum, non
+                mollis lorem luctus ac. Proin interdum tortor a metus efficitur blandit vitae vitae diam. Donec tortor leo,
+                efficitur ultricies augue vel, consectetur ultrices lacus. Donec sollicitudin eleifend dolor et viverra.
+                Cras ornare velit dapibus nisl gravida maximus. In vulputate semper leo non ultrices. Fusce leo sem, dapibus
+                quis turpis sed, convallis consectetur metus. Integer eget quam sed leo pellentesque feugiat eget in urna.
+                Praesent eu enim velit. Suspendisse eget consequat turpis.</p>
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#contactUs">
+                VÕTA ÜHENDUST
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="contactUs" tabindex="-1" aria-labelledby="contactUsLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="contactUsLabel">Ettevõtte kontaktandmed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Ettevõtte nimi</p>
+                        <div class=" d-flex">
+                            <p>tel:</p>
+                            <a href="tel" class="ms-1">55555555 </a>
+                        </div>
+                        <div class="d-flex">
+                            <p>@:</p>
+                            <a href="mailto" class="ms-1">email@email.com </a>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+  
+		</div>
+      </div>
+
+    </div>
+  </section>
+  
+  <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
+  <footer class="footer bg-light mt-5 p-lg-5 py-4 px-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 d-flex flex-column row-gap-1 justify-content-lg-center">
+                <p class="fw-bold">Ettevõtte nimi</p>
+                <div class=" d-flex">
+                    <p>tel:</p>
+                    <a href="tel" class="ms-1">55555555 </a>
+                </div>
+                <div class="d-flex">
+                    <p>@:</p>
+                    <a href="mailto" class="ms-1">email@email.com </a>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-12 d-flex flex-lg-column column-gap-3 row-gap-3 justify-content-lg-center pt-lg-0 pt-4">
+                <a href="#"><img src="instagram.svg" alt="instagram" class="float-lg-end sm-img "/></a>
+                <a href="#"><img src="facebook.svg" alt="facebook" class="float-lg-end sm-img "/></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
